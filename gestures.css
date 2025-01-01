@@ -1,0 +1,68 @@
+/* Reset some default browser styles */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Flashcard styles */
+#bone-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each card */
+}
+
+.bone {
+    background-color: #1e1e1e; /* Darker card background */
+    border: 1px solid #444; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+/* Hover effect */
+.bone:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Optional styles for responsiveness */
+@media (max-width: 600px) {
+    #bone-descriptions {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+    
+    h3 {
+        font-size: 1.25rem; /* Smaller subheading on mobile */
+    }
+}

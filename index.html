@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton360</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Importing Three.js and required modules -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.129.0/build/three.module.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://cdn.jsdelivr.net/npm/three@0.129.0/examples/jsm/controls/OrbitControls.js",
+        "three/examples/jsm/loaders/FBXLoader.js": "https://cdn.jsdelivr.net/npm/three@0.129.0/examples/jsm/loaders/FBXLoader.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Background and 3D Skeleton Model -->
+    <div id="container3D"></div>
+
+    <button class="navigate-btn1 navigate-btn" onclick="window.location.href='description.html'">Go to Description</button>
+    <button class="navigate-btn1 navigate-btn" onclick="window.location.href='gesture.html'">Go to Gestures</button>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+*.obj filter=lfs diff=lfs merge=lfs -text
+models/Human_skeleton.obj filter=lfs diff=lfs merge=lfs -text
